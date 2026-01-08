@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Family</title>
+
+	<link rel="stylesheet" type="text/css" href="css/website.css">
+
+</head>
+<body>
+  <div class="frame">
+
+	<h2>Peek of My Family</h2>
+
+       <h3>Family Background</h3>
+        <div class="image-box">
+      		<img src="image/family5.jpg" alt="Family">
+
+      </div>
+        <p>
+        	
+          I come from a close-knit family consisting of six siblings and I am the youngest among them. Growing up as the youngest child has given me a unique perspective on family life as I have always been surrounded by guidance, care and encouragement from my older siblings. My family places great importance on values such as respect, responsibility and mutual support which have shaped my character and attitude toward life. Being part of a large family has taught me the importance of cooperation, patience and understanding. I have learned how to communicate effectively and adapt to different personalities within my family. The constant support and motivation from my family members have helped me face challenges with confidence. They have always encouraged me to pursue my education and personal goals wholeheartedly. Overall, my family background has played a significant role in shaping who I am today providing me with emotional support and a strong foundation for my future.
+        </p>
+
+        <h3>Siblings</h3>
+        <div class="image-box">
+      <img src="image/sibling.jpg" alt="Sibling"></div>
+        <p>
+          Among all my siblings, I am especially close to my sister, who has always been a constant source of support and comfort in my life. She understands me well and is someone I can rely on whenever I need advice, encouragement, or simply someone to listen. Growing up, she played an important role in guiding and protecting me, especially as the youngest in the family. Her presence makes me feel safe, appreciated, and understood. We often share conversations, laughter, and meaningful moments that strengthen our bond. She inspires me to be more confident and independent while always reminding me of the importance of family. Having such a close relationship with my sister makes my family life more meaningful and fills it with warmth and love.
+        </p>
+      </div>
+
+	<script>
+  let interval;
+  const slider = document.querySelector(".slider");
+
+  function startSlide() {
+    interval = setInterval(() => {
+      slides[current].classList.remove("active");
+      current = (current + 1) % slides.length;
+      slides[current].classList.add("active");
+    }, 3000);
+  }
+
+  slider.addEventListener("mouseenter", () => clearInterval(interval));
+  slider.addEventListener("mouseleave", startSlide);
+
+  startSlide();
+</script>
+</div>
+
+</body>
+</html>

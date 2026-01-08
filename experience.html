@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Experiences</title>
+
+	<link rel="stylesheet" type="text/css" href="css/website.css">
+
+</head>
+<body>
+
+  <div class="frame">
+
+	<div class="slider">
+  	<img src="image/anm.jpg" alt="Image of National Archives of Malaysia." height="250" width="250" class="slide active">
+  	<img src="image/work.jpg" alt="Image of a pen on forms." height="250" width="250" class="slide">
+  	<img src="image/work2.jpg" alt="Image of drafting paperwork." height="250" width="250" class="slide">
+  	<img src="image/work3.jpg" alt="Image of forms in file." height="250" width="250" class="slide">
+  	<img src="image/work4.jpg" alt="Image of files on a desk." height="250" width="250" class="slide">
+  	<img src="image/work5.jpg" alt="Image of seminar." height="250" width="250" class="slide">
+  	<img src="image/work2.jpg" alt="Image of seminar." height="250" width="250" class="slide">
+  </div>
+
+  <center><a href="https://www.arkib.gov.my/ms/" target="_blank">Get To Know About National Archives of Malaysia</a></center>
+
+
+    <h3><b>Industrial Training: </b></h3> 
+    <p>During my industrial training, I gained hands-on experience working with real-world information management tasks. 
+    I learned how to organize, document, and archive data systematically. 
+    This experience taught me the importance of accuracy, attention to detail, and following standard operating procedures. 
+    I also had the chance to collaborate with staff from different departments, enhancing my teamwork and communication skills. 
+    The training provided valuable insight into professional work environments and helped me understand the practical applications of my theoretical studies.
+  </p>
+
+  <h3><b>Creative Media & Infographics: </b></h3>
+    <p>I was involved in designing infographics and creative content for school and community events. 
+    Using tools like Canva, I developed visually appealing materials that effectively communicated information. 
+    This experience helped me refine my design sense, time management and attention to audience needs. 
+    I also learned how to collaborate with peers to deliver quality content within tight deadlines which enhanced my project management skills.
+  </p>
+</div>
+
+<div class="poster-gallery">
+  <div class="poster-item">
+
+  <img src="image/poster.png" alt="Infographic 1">
+  <p>Larangan Pemusnahan Rekod Awam</p></div>
+
+  <div class="poster-item">
+  <img src="image/poster2.png" alt="Infographic 2">
+  <p>Borang Bagi Pelupusan Rekod Awam</p></div>
+
+  <div class="poster-item">
+  <img src="image/poster3.jpg" alt="Infographic 3">
+  <p>Carta Alir Permohonan Pelupusan Rekod Awam Tidak Dinyatakan Dalam Jadual Pelupusan Rekod</p></div>
+
+  <div class="poster-item">
+  <img src="image/poster4.jpg" alt="Infographic 4">
+  <p>Permohonan Pelupusan Rekod Awam Dinyatakan Dalam Jadual Pelupusan Rekod</p></div>
+  
+</div>
+
+<script>
+  let interval;
+  const slider = document.querySelector(".slider");
+
+  function startSlide() {
+    interval = setInterval(() => {
+      slides[current].classList.remove("active");
+      current = (current + 1) % slides.length;
+      slides[current].classList.add("active");
+    }, 3000);
+  }
+
+  slider.addEventListener("mouseenter", () => clearInterval(interval));
+  slider.addEventListener("mouseleave", startSlide);
+
+  startSlide();
+</script>
+</dev>
+
+</body>
+</html>

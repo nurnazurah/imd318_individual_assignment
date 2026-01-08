@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Education</title>
+
+	<link rel="stylesheet" type="text/css" href="css/website.css">
+
+</head>
+<body>
+
+  <div class="frame">
+
+	<div class="content">
+  		<h2>My Education</h2>
+
+	<div class="education-cards">
+    	<div class="card">
+      	<img src="image/primary.jpg" alt="Primary School" height="250" width="250" >
+      	<img src="image/primary3.jpg" alt="Primary School" height="250" width="250" >
+      	<img src="image/primary2.jpg" alt="Primary School" height="250" width="250" >
+      	<div class="card-content">
+        	<h3>Primary School</h3>
+        	<p>I completed my primary school education which played an important role in shaping my academic journey. At this level, I built a strong foundation in core subjects such as language, mathematics and general knowledge. I actively participated in classroom activities and school programs that helped improve my confidence and communication skills. This stage of education also taught me discipline, responsibility and the importance of respecting teachers and peers.</p>
+
+        	📍 View Location <center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3972.72286456709!2d102.271079!3d5.30587!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31b66d71684c5a15%3A0xc64526875f732361!2sSK%20Laloh!5e0!3m2!1sen!2smy!4v1767769790390!5m2!1sen!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" target="_blank"></iframe></center>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="image/high_school.jpg" alt="High School" height="250" width="250" >
+      <img src="image/high_school2.jpg" alt="High School" height="250" width="250" >
+      <img src="image/high_school3.jpg" alt="High School" height="250" width="250" >
+      <img src="image/high_school4.jpg" alt="High School" height="250" width="250" >
+      <img src="image/high_school5.jpg" alt="High School" height="250" width="250" >
+      <img src="image/high_school6.jpg" alt="High School" height="250" width="250" >
+      <img src="image/high_school7.jpg" alt="High School" height="250" width="250" >
+      <img src="image/high_school8.jpg" alt="High School" height="250" width="250" >
+
+      <div class="card-content">
+        <h3>High School</h3>
+        <p>My high school journey was a meaningful phase that shaped my academic path and personal development. During this time, I learned to balance studies with co-curricular activities which helped me become more organized and disciplined. I actively engaged in group work and school programs that strengthened my communication and teamwork skills. High school exposed me to diverse learning experiences that encouraged creativity and critical thinking. The challenges I faced taught me resilience and perseverance in achieving my goals. Support from teachers and friends motivated me to perform better academically. This stage of education built my confidence and prepared me for the responsibilities of higher learning. Overall, my high school experience laid a strong foundation for my future studies and personal growth.</p>
+
+        📍 View Location<center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3972.6875973104916!2d102.27107099999998!3d5.311344000000009!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31b66d7612353fa7%3A0x9fb66da13ed21754!2sSMK%20Laloh!5e0!3m2!1sen!2smy!4v1767770541291!5m2!1sen!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></center>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="image/university.jpg" alt="University" height="250" width="250" >
+      <img src="image/university2.jpg" alt="University" height="250" width="250" >
+      <img src="image/university3.jpg" alt="University" height="250" width="250" >
+      <img src="image/university4.jpg" alt="University" height="250" width="250" >
+      <img src="image/university5.jpg" alt="University" height="250" width="250" >
+      <div class="card-content">
+        <h3>University</h3>
+        <p>I am currently continuing my Diploma studies at the university where I am exposed to a structured academic environment that enhances both my knowledge and practical abilities. Throughout this diploma program, I have learned various aspects related to information management, digital content creation and basic web development. The combination of lectures, assignments and practical projects has helped me improve my technical skills and self-discipline. In addition, this learning experience has strengthened my confidence in working independently as well as collaboratively in group projects. This diploma journey plays an important role in shaping my academic growth and preparing me for future career opportunities.</p>
+
+        📍 View Location<center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3969.6947729231606!2d102.2734988!3d5.7569976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31b68fe6f50d123f%3A0xaeb67217536d6442!2sUiTM%20Machang!5e0!3m2!1sen!2smy!4v1767770781473!5m2!1sen!2smy" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></center>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+	<script>
+  let interval;
+  const slider = document.querySelector(".slider");
+
+  function startSlide() {
+    interval = setInterval(() => {
+      slides[current].classList.remove("active");
+      current = (current + 1) % slides.length;
+      slides[current].classList.add("active");
+    }, 3000);
+  }
+
+  slider.addEventListener("mouseenter", () => clearInterval(interval));
+  slider.addEventListener("mouseleave", startSlide);
+
+  startSlide();
+</script>
+</div>
+</body>
+</html>
